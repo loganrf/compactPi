@@ -37,4 +37,5 @@ compactPi is a project to develop a compact Raspberry Pi Compute Module carrier 
 | 9 |USB| 1x JST-GH BM04B/ 1x USB-C OTG | 2 | |
 | 10 |SD| micro-SD | 1 | |
 | 11 |Power | TBD | 2 | |
+| 12 |CAN Bus | JST-GH BM04B | 2 | |
 
