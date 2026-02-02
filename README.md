@@ -29,7 +29,7 @@ Given that this is a side project for me, I am being very conservative with thes
 ## Power/Physical
 | # | Description | Value/Units | Notes |
 |---|---|---|---|
-| 1 |Input Voltage range| 5-25V | 2 independent inputs |
+| 1 |Input Voltage range| 6-25V | 2 independent inputs + USB-C PD option |
 | 2 |Mainboard power dissipation | 25W | |
 | 3 |Dimensions | 45mm x 105mm | Evaluating options for shrinking length without over-crowding connectors|
 
