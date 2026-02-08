@@ -1,1 +1,0 @@
-This project is open source. The hardware is licensed under CERN-OHL-W-2.0, the firmware is licensed under GPLv3, and the documentation is licensed under CC-BY-4.0. See the LICENSE files in each subdirectory for details.
