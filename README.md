@@ -60,3 +60,6 @@ Given that this is a side project for me, I am being very conservative with thes
 | 11 |Power | TBD | 2 | |
 | 12 |CAN Bus | JST-GH BM04B | 2 | |
 
+# Stackup
+![Stackup Diagram From KiCAD](Assets/Stackup.png)
+
