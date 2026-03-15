@@ -772,11 +772,11 @@
     ],
     [
       "00000000-0000-0000-0000-00005cff70b1",
-      "CM5_HighSpeed"
+      "CM5 HighSpeed HDMI"
     ],
     [
       "00000000-0000-0000-0000-00005cff706a",
-      "CM5_GPIO ( Ethernet, GPIO, SDCARD)"
+      "CM5 GPIO Ethernet SDIO"
     ],
     [
       "49b509f9-5fb6-4956-8353-f70988d2ec73",
@@ -788,7 +788,7 @@
     ],
     [
       "efe27aed-b9d7-4250-8fde-aaa7412d6a69",
-      "Autopilot Connectors"
+      "Autopilot Interfaces"
     ],
     [
       "9639513c-40e5-4f7a-bb71-0be3847f4ef3",

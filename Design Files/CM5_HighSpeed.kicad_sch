@@ -7217,7 +7217,7 @@
 		)
 		(uuid "4aee84d1-0859-48ac-a053-5a981ee1b24a")
 	)
-	(hierarchical_label "+5v"
+	(hierarchical_label "5V0_Peripheral"
 		(shape input)
 		(at 273.05 185.42 180)
 		(effects
@@ -7316,7 +7316,7 @@
 		)
 		(uuid "8e715b73-353f-4cfc-aa33-1eac54b89b6c")
 	)
-	(hierarchical_label "+5v"
+	(hierarchical_label "5V0_Peripheral"
 		(shape input)
 		(at 218.44 130.81 0)
 		(effects
