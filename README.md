@@ -1,3 +1,8 @@
+
+# Note
+
+On temporary hiatus
+
 # compactPi
 
 compactPi is a project to develop a compact Raspberry Pi Compute Module carrier suitable for ArduPilot applications. It's primarily targeted at marine applications (ArduSub/ArduRover).
