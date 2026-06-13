@@ -2936,16 +2936,6 @@
 		)
 		(uuid "b6b511fc-894c-4214-810d-16d8dd50f97f")
 	)
-	(text "TODO: 5V Tolerant Buffer for I2C/UART"
-		(exclude_from_sim no)
-		(at 156.972 205.486 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-			)
-		)
-		(uuid "b906e1dc-503b-4df4-b129-562bbef4bbf0")
-	)
 	(text "CAN Interface"
 		(exclude_from_sim no)
 		(at 261.366 23.114 0)

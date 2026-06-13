@@ -1589,16 +1589,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "PWMA"
-		(exclude_from_sim no)
-		(at 246.634 110.744 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1d36d784-5f80-4698-8fd4-66b70e4709c6")
-	)
 	(text "3.3V IO"
 		(exclude_from_sim no)
 		(at 145.288 59.944 0)
@@ -1608,36 +1598,6 @@
 			)
 		)
 		(uuid "39a911cc-167e-4b37-93f9-d026bccb4374")
-	)
-	(text "PWMA"
-		(exclude_from_sim no)
-		(at 247.396 136.906 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5a5fe17c-3a6d-4811-b29d-16e4f5168dd3")
-	)
-	(text "PWMA"
-		(exclude_from_sim no)
-		(at 245.11 84.582 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "880024df-2c75-491f-b0aa-724ebc208098")
-	)
-	(text "PWMA"
-		(exclude_from_sim no)
-		(at 244.602 59.436 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8ebb4c15-aa66-456b-8744-526a645f49c6")
 	)
 	(junction
 		(at 251.46 96.52)
@@ -2635,7 +2595,7 @@
 		)
 		(uuid "09e74325-69e7-41e8-a27f-d5f9c5540fd8")
 	)
-	(label "PWM_PR_00"
+	(label "PWM_00_PR"
 		(at 165.1 81.28 0)
 		(effects
 			(font

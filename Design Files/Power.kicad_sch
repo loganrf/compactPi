@@ -5686,12 +5686,6 @@
 		(uuid "9e832113-293d-40d2-a7c1-282f17393b9d")
 	)
 	(junction
-		(at 255.27 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a0281710-ae15-403d-96a7-c4fcfcfcd629")
-	)
-	(junction
 		(at 199.39 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9615,16 +9609,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 154.94) (xy 255.27 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e344588b-401b-4a65-bb51-3361e557cefe")
-	)
-	(wire
-		(pts
 			(xy 50.8 106.68) (xy 60.96 106.68)
 		)
 		(stroke
@@ -10023,6 +10007,26 @@
 		)
 		(uuid "0cf22f87-283e-42db-9676-1dc20e092cb3")
 	)
+	(label "G_USB"
+		(at 247.65 254 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "16b7c7f8-63e1-4ab4-8b1b-8545983329bd")
+	)
+	(label "VCAP_AUX"
+		(at 199.39 163.83 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "28262adc-f415-463c-8109-202db5afe198")
+	)
 	(label "V_USB"
 		(at 161.29 242.57 0)
 		(effects
@@ -10043,6 +10047,16 @@
 		)
 		(uuid "3ca100f7-f196-4019-94cf-8c7614503c66")
 	)
+	(label "G_AUX"
+		(at 247.65 147.32 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3fe5d902-9c59-43e2-a5a0-6fcbb3e5be4f")
+	)
 	(label "VIN_3V3"
 		(at 92.71 182.88 0)
 		(effects
@@ -10052,6 +10066,16 @@
 			(justify left bottom)
 		)
 		(uuid "42ff1488-4211-456f-9dcc-344c223a25e6")
+	)
+	(label "VCAP_USB"
+		(at 199.39 270.51 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5cd89185-d0ae-4531-a368-3e7abb10f103")
 	)
 	(label "I2Cc_SCL"
 		(at 78.74 270.51 0)
@@ -10072,6 +10096,16 @@
 			(justify left bottom)
 		)
 		(uuid "6b669b31-c9e9-4d7e-b71f-8602e0bd0b91")
+	)
+	(label "G_BATT"
+		(at 247.65 203.2 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a8e437f-c598-432f-9cdf-dae3a52ea0e1")
 	)
 	(label "V_AUX"
 		(at 199.39 134.62 0)
@@ -10172,6 +10206,16 @@
 			(justify left bottom)
 		)
 		(uuid "c62aaab9-241b-45d5-94e6-fcaff144dfc7")
+	)
+	(label "VCAP_BATT"
+		(at 199.39 220.98 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d058eb8d-6504-4853-a969-7431ceefff48")
 	)
 	(label "V_COMMON"
 		(at 39.37 22.86 0)

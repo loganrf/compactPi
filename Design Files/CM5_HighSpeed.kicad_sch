@@ -5636,17 +5636,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Jumpers to be fitted if DPHY1 is used\n"
-		(exclude_from_sim no)
-		(at 288.29 187.706 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "19a5aacd-255a-4bf3-89c1-efd2ab61016c")
-	)
 	(junction
 		(at 273.05 163.83)
 		(diameter 0)
@@ -5880,8 +5869,18 @@
 		(uuid "43b629f4-1de4-45f3-9bfd-a0147c25c5a3")
 	)
 	(no_connect
-		(at 165.1 171.45)
+		(at 207.01 163.83)
 		(uuid "ebcf8082-02ce-457e-ba0b-b236c8318396")
+	)
+	(wire
+		(pts
+			(xy 194.31 157.48) (xy 189.23 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "031d8b69-84b1-4b25-a1d0-592618cd9173")
 	)
 	(wire
 		(pts
@@ -6145,6 +6144,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 156.21) (xy 194.31 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aaeb2f9-0883-4a87-84c0-eea791e74d13")
+	)
+	(wire
+		(pts
 			(xy 273.05 163.83) (xy 280.67 163.83)
 		)
 		(stroke
@@ -6242,6 +6251,16 @@
 			(type default)
 		)
 		(uuid "33dd2534-25c1-4fda-a0b3-97500acce2cd")
+	)
+	(wire
+		(pts
+			(xy 189.23 152.4) (xy 193.04 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34333d56-f811-4e30-b843-27794ea0ec5d")
 	)
 	(wire
 		(pts
@@ -6355,7 +6374,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 152.4) (xy 156.21 152.4)
+			(xy 207.01 144.78) (xy 198.12 144.78)
 		)
 		(stroke
 			(width 0)
@@ -6475,6 +6494,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 153.67) (xy 201.93 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "602282be-64a3-42f4-8ca0-7be209b1b7f5")
+	)
+	(wire
+		(pts
 			(xy 278.13 133.35) (xy 278.13 134.62)
 		)
 		(stroke
@@ -6545,7 +6574,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 158.75) (xy 160.02 158.75)
+			(xy 198.12 151.13) (xy 201.93 151.13)
 		)
 		(stroke
 			(width 0)
@@ -6575,13 +6604,23 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 152.4) (xy 156.21 158.75)
+			(xy 198.12 144.78) (xy 198.12 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "75d2b8bf-f75c-4f6e-87b0-625e4e0167cb")
+	)
+	(wire
+		(pts
+			(xy 201.93 156.21) (xy 194.31 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77038aa0-02bb-4dc8-b6ea-9a22b65f2d84")
 	)
 	(wire
 		(pts
@@ -6745,6 +6784,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 157.48) (xy 173.99 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c6ca982-366f-49fa-90a8-4cfca70a27bb")
+	)
+	(wire
+		(pts
 			(xy 270.51 134.62) (xy 267.97 134.62)
 		)
 		(stroke
@@ -6795,6 +6844,26 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 152.4) (xy 170.18 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9abf0c0a-5638-40ce-82ea-64b8287c6503")
+	)
+	(wire
+		(pts
+			(xy 173.99 152.4) (xy 170.18 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bdeff83-0380-4cb5-89a0-3423bfc74b37")
+	)
+	(wire
+		(pts
 			(xy 63.5 153.67) (xy 66.04 153.67)
 		)
 		(stroke
@@ -6815,7 +6884,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 166.37) (xy 158.75 167.64)
+			(xy 200.66 158.75) (xy 200.66 160.02)
 		)
 		(stroke
 			(width 0)
@@ -6895,7 +6964,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 161.29) (xy 160.02 161.29)
+			(xy 151.13 161.29) (xy 170.18 161.29)
 		)
 		(stroke
 			(width 0)
@@ -7075,7 +7144,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 163.83) (xy 160.02 163.83)
+			(xy 127 163.83) (xy 173.99 163.83)
 		)
 		(stroke
 			(width 0)
@@ -7112,6 +7181,16 @@
 			(type default)
 		)
 		(uuid "d18493eb-0893-4c78-b66b-c5fb563fbe35")
+	)
+	(wire
+		(pts
+			(xy 193.04 152.4) (xy 193.04 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d318140b-b74e-4633-baa6-44398e6fce97")
 	)
 	(wire
 		(pts
@@ -7285,7 +7364,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 166.37) (xy 158.75 166.37)
+			(xy 201.93 158.75) (xy 200.66 158.75)
 		)
 		(stroke
 			(width 0)
@@ -7372,16 +7451,6 @@
 			(justify left bottom)
 		)
 		(uuid "052acc87-8ff9-4162-8f55-f7121d221d0a")
-	)
-	(label "USB3-1-D_N"
-		(at 130.81 166.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1020b588-7eb0-4b70-bbff-c77a867c3142")
 	)
 	(label "HDMI0_D1_N"
 		(at 238.76 92.71 0)
@@ -7673,6 +7742,16 @@
 		)
 		(uuid "bd239e38-65c4-496e-8c3f-36e14ec5bd99")
 	)
+	(label "USB3-1-D_N"
+		(at 156.21 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c17dae39-81ea-44d0-bb0c-e2daffb6ceb6")
+	)
 	(label "HDMI0_D2_N"
 		(at 238.76 87.63 0)
 		(effects
@@ -7784,12 +7863,12 @@
 		(uuid "fb126c26-740a-4781-a5dd-5ef5455e4878")
 	)
 	(label "USB3-1-D_P"
-		(at 130.81 163.83 0)
+		(at 168.91 163.83 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "fd146ca2-8fb8-4c71-9277-84f69bc5d3fc")
 	)
@@ -7949,7 +8028,7 @@
 	)
 	(hierarchical_label "5V0_Peripheral"
 		(shape input)
-		(at 165.1 152.4 0)
+		(at 207.01 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9851,7 +9930,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 158.75 167.64 0)
+		(at 200.66 160.02 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -9862,7 +9941,7 @@
 		(dnp no)
 		(uuid "202a14f3-8430-4f05-902f-861f79547dd9")
 		(property "Reference" "#PWR08"
-			(at 158.75 173.99 0)
+			(at 200.66 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9873,7 +9952,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.623 172.0342 0)
+			(at 200.533 164.4142 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9883,7 +9962,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 167.64 0)
+			(at 200.66 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9894,7 +9973,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 167.64 0)
+			(at 200.66 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9905,7 +9984,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 167.64 0)
+			(at 200.66 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10065,7 +10144,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 165.1 161.29 0)
+		(at 207.01 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10075,7 +10154,7 @@
 		(dnp no)
 		(uuid "8597623a-c488-4e43-bbfe-12c9e91ee121")
 		(property "Reference" "J11"
-			(at 167.64 164.1857 0)
+			(at 209.55 156.5657 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10086,7 +10165,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_MountingPin"
-			(at 167.64 161.6457 0)
+			(at 209.55 154.0257 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10097,7 +10176,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
-			(at 165.1 161.29 0)
+			(at 207.01 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10108,7 +10187,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 161.29 0)
+			(at 207.01 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10119,7 +10198,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 165.1 161.29 0)
+			(at 207.01 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10155,7 +10234,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:WE-TVS-82400102")
-		(at 154.94 185.42 0)
+		(at 181.61 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10166,7 +10245,7 @@
 		(fields_autoplaced yes)
 		(uuid "b37c5d8a-1995-4a10-935f-49405c3fc0c6")
 		(property "Reference" "U23"
-			(at 154.94 176.53 0)
+			(at 181.61 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10176,7 +10255,7 @@
 			)
 		)
 		(property "Value" "WE-TVS-82400102"
-			(at 154.94 179.07 0)
+			(at 181.61 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10186,7 +10265,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 154.94 190.5 0)
+			(at 181.61 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10197,7 +10276,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/82400102.pdf"
-			(at 154.94 191.77 0)
+			(at 181.61 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10208,7 +10287,7 @@
 			)
 		)
 		(property "Description" "Low Capacitance TVS Diode Array, 2 Channels, SOT-23-6"
-			(at 154.94 185.42 0)
+			(at 181.61 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
