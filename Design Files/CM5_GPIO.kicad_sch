@@ -5113,6 +5113,148 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:NetTie_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "NT"
+				(at 0 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "NetTie_2"
+				(at 0 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Net tie, 2 pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "net tie short"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Net*Tie*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NetTie_2_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NetTie_2_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -6663,17 +6805,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Activity LED"
-		(exclude_from_sim no)
-		(at 169.164 27.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "33e14999-b5ae-46d2-ac28-01787a512419")
-	)
 	(text "R2 : Simplify nPWR_LED Drive"
 		(exclude_from_sim no)
 		(at 206.502 135.382 0)
@@ -6693,17 +6824,6 @@
 			)
 		)
 		(uuid "67485507-feb4-40bf-8b31-435bf88778c2")
-	)
-	(text "GPIO Voltage select\n"
-		(exclude_from_sim no)
-		(at 217.17 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8b0e77d6-7888-4840-a867-95c0b6bc01b5")
 	)
 	(text "Force RPIBOOT = Jumper Pins 1-2 \n"
 		(exclude_from_sim no)
@@ -6960,6 +7080,10 @@
 		(uuid "426744f5-151b-4336-9db2-19b96ec1a6aa")
 	)
 	(no_connect
+		(at 149.86 49.53)
+		(uuid "488a8cd8-8203-4462-a9d8-f7946419adc8")
+	)
+	(no_connect
 		(at 149.86 138.43)
 		(uuid "53762fad-2ef4-4531-bfed-9fd076053c18")
 	)
@@ -7173,16 +7297,6 @@
 		)
 		(uuid "115c8e86-c44c-49a7-bc69-7044c5ce83c9")
 	)
-	(polyline
-		(pts
-			(xy 228.6 86.36) (xy 228.6 102.87)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "11a85d83-ca23-4a66-9a7a-3b010acc3da7")
-	)
 	(wire
 		(pts
 			(xy 73.66 95.25) (xy 88.9 95.25)
@@ -7192,16 +7306,6 @@
 			(type solid)
 		)
 		(uuid "11c5b40a-374a-41a1-a6d6-686d5951b8b7")
-	)
-	(wire
-		(pts
-			(xy 166.37 34.29) (xy 166.37 39.37)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "137b3fef-8b87-4da9-a1e4-8bcd4c388b4b")
 	)
 	(wire
 		(pts
@@ -7725,16 +7829,6 @@
 	)
 	(polyline
 		(pts
-			(xy 189.23 86.36) (xy 228.6 86.36)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "5e79d815-3e66-452c-bc9d-447f9c537736")
-	)
-	(polyline
-		(pts
 			(xy 332.74 165.1) (xy 255.27 165.1)
 		)
 		(stroke
@@ -7795,16 +7889,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 21.59) (xy 166.37 26.67)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "68a0beb7-36cd-4564-8402-3501800a8ad9")
-	)
-	(wire
-		(pts
 			(xy 294.64 45.72) (xy 294.64 53.34)
 		)
 		(stroke
@@ -7832,6 +7916,16 @@
 			(type solid)
 		)
 		(uuid "731f460e-8cc0-4cd4-8a52-8beda365153c")
+	)
+	(wire
+		(pts
+			(xy 207.01 93.98) (xy 224.79 93.98)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "75a08a1c-dbe8-40f5-8aee-d90892da4988")
 	)
 	(wire
 		(pts
@@ -8145,16 +8239,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 49.53) (xy 166.37 46.99)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "9dbceeba-9770-4d28-bb56-72cb3d7824e2")
-	)
-	(wire
-		(pts
 			(xy 149.86 72.39) (xy 163.83 72.39)
 		)
 		(stroke
@@ -8212,16 +8296,6 @@
 			(type solid)
 		)
 		(uuid "a523695c-35b4-4859-b781-154824ab5ca9")
-	)
-	(wire
-		(pts
-			(xy 157.48 21.59) (xy 166.37 21.59)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "a5500b24-2218-4733-b10c-3e2626a7ed0b")
 	)
 	(wire
 		(pts
@@ -8382,36 +8456,6 @@
 			(type solid)
 		)
 		(uuid "c14872e9-a94b-4975-8e29-9f8e477e2679")
-	)
-	(wire
-		(pts
-			(xy 149.86 49.53) (xy 166.37 49.53)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c15f1642-2bad-485f-ac22-f9329a013e94")
-	)
-	(polyline
-		(pts
-			(xy 187.96 102.87) (xy 187.96 86.36)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c638678c-430a-49cf-a0d4-86651f3fbb2f")
-	)
-	(wire
-		(pts
-			(xy 209.55 93.98) (xy 224.79 93.98)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c7a234a1-ffa5-48e7-99f2-0165a3be0943")
 	)
 	(wire
 		(pts
@@ -8583,16 +8627,6 @@
 		)
 		(uuid "df586b02-02b3-429d-a0c0-fe4a87110a37")
 	)
-	(polyline
-		(pts
-			(xy 189.23 86.36) (xy 187.96 86.36)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "df68d577-4fdb-42a9-a618-f997c5cb205b")
-	)
 	(wire
 		(pts
 			(xy 198.12 132.08) (xy 209.55 132.08)
@@ -8703,16 +8737,6 @@
 		)
 		(uuid "f10ca11b-8e6e-41c6-8cce-e4f8cb2a7363")
 	)
-	(polyline
-		(pts
-			(xy 228.6 102.87) (xy 189.23 102.87)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "f178515b-b448-485d-b4f3-17f976e8a7a0")
-	)
 	(wire
 		(pts
 			(xy 260.35 120.65) (xy 267.97 120.65)
@@ -8772,16 +8796,6 @@
 			(type solid)
 		)
 		(uuid "fa731abd-5343-4a3a-97a6-2fafda7929ea")
-	)
-	(polyline
-		(pts
-			(xy 187.96 102.87) (xy 189.23 102.87)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "ff54cdc2-4b40-4994-8140-ac296a31bdc0")
 	)
 	(image
 		(at 86.36 232.41)
@@ -10398,16 +10412,6 @@
 		)
 		(uuid "e74c1c14-2c10-4ed2-af66-d46451b14517")
 	)
-	(label "3V3"
-		(at 157.48 21.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e821a9c8-bb54-4473-95ac-7749e7d5b86f")
-	)
 	(label "SD_CLK"
 		(at 273.05 128.27 0)
 		(effects
@@ -11929,311 +11933,6 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 166.37 30.48 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005e19548d")
-		(property "Reference" "D3"
-			(at 169.3418 29.4894 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED Green"
-			(at 169.3418 31.8008 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field4" "Digikey "
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" "LTST-S270KGKT"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field6" "SML-A12M8TT86N"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field8" "650263301"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Description" "	Green 572nm LED Indication - Discrete 2.2V 2-SMD, No Lead"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 166.37 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fd1b2abd-acdb-456a-b12a-78be5659d6b2")
-		)
-		(pin "2"
-			(uuid "241e4967-98ec-42a7-b49a-322999e65405")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff706a"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 166.37 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005e19768b")
-		(property "Reference" "R18"
-			(at 170.434 46.482 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 168.148 44.323 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 164.592 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field4" "Farnell"
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" "9239235"
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field7" "KOA EUROPE GMBH"
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field6" "RK73H1ETTP1001F"
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Description" "Resistor 1K M1005 1% 63mW"
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field8" "125049511"
-			(at 166.37 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ca7b197f-7808-47de-a461-95f69fe0e8ed")
-		)
-		(pin "2"
-			(uuid "7c70e3d7-b867-41ec-ba63-281d778af73f")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff706a"
-					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
 		(at 209.55 115.57 90)
 		(unit 1)
 		(body_style 1)
@@ -12532,153 +12231,6 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff706a"
 					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 205.74 93.98 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005e5f44e8")
-		(property "Reference" "R3"
-			(at 204.47 91.44 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0R"
-			(at 209.55 91.44 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 205.74 95.758 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field4" "Farnell"
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field5" "9233750"
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field7" "Rohm"
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field6" "MCR10EZPJ000"
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Description" "Resistor 0R M2012 5% "
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field8" "121629591"
-			(at 205.74 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "20f86032-2ca7-4d85-9342-2ec7dd95b228")
-		)
-		(pin "2"
-			(uuid "bb94c706-c1c6-4e19-ac2a-271d09f29af0")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff706a"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -13087,6 +12639,86 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff706a"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:NetTie_2")
+		(at 204.47 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1daf8eec-f5b6-483f-b7fd-f0c3e5cc6fb4")
+		(property "Reference" "NT1"
+			(at 204.47 88.9 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NetTie_2"
+			(at 204.47 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm"
+			(at 204.47 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Net tie, 2 pins"
+			(at 204.47 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ab6e0b4b-ca73-4d40-98e7-2a79809d6cea")
+		)
+		(pin "1"
+			(uuid "32499585-1cae-4d79-9102-b89a208d3243")
+		)
+		(instances
+			(project "compactPi"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/00000000-0000-0000-0000-00005cff706a"
+					(reference "NT1")
 					(unit 1)
 				)
 			)

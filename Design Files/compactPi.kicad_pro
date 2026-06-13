@@ -805,7 +805,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "FL1,D5-6,#PWR36,#PWR48-49,#PWR51-52,#PWR54,#PWR62-66,R23-26,C38-39,C64-68",
+    "used_designators": "NT1",
     "variants": []
   },
   "sheets": [

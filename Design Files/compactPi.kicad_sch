@@ -1631,7 +1631,7 @@
 	)
 	(text "Discharge Resistor\nNeeded by some\nType C PSUs"
 		(exclude_from_sim no)
-		(at 77.216 40.64 0)
+		(at 77.216 32.004 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1663,16 +1663,16 @@
 		(uuid "25778092-fee3-4a4b-81a2-46c3d318c44a")
 	)
 	(junction
+		(at 52.07 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2af7b705-b0de-4fa8-9a14-aa6cc727dfdb")
+	)
+	(junction
 		(at 38.1 270.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "325593e6-ee5e-4cee-8f41-675f1e89ceba")
-	)
-	(junction
-		(at 52.07 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c7f9b0b1-464e-4d9f-88e8-2ee96a1c7320")
 	)
 	(junction
 		(at 16.51 270.51)
@@ -1684,7 +1684,7 @@
 		(at 52.07 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ed21f15d-bda2-4255-a577-5e76b87a5663")
+		(uuid "d98a32f3-e6f4-4eae-bc37-ca02535e1569")
 	)
 	(no_connect
 		(at 49.53 140.97)
@@ -1984,7 +1984,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 63.5) (xy 86.36 63.5)
+			(xy 101.6 63.5) (xy 114.3 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2124,16 +2124,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 58.42) (xy 64.77 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d278586-2c7e-4595-8c58-7ea941d8b0d3")
-	)
-	(wire
-		(pts
 			(xy 151.13 161.29) (xy 163.83 161.29)
 		)
 		(stroke
@@ -2184,16 +2174,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 63.5) (xy 64.77 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f3eee74-8619-4fab-844e-2c65627e327f")
-	)
-	(wire
-		(pts
 			(xy 220.98 158.75) (xy 234.95 158.75)
 		)
 		(stroke
@@ -2224,7 +2204,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 58.42) (xy 86.36 58.42)
+			(xy 101.6 58.42) (xy 114.3 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2444,6 +2424,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 63.5) (xy 86.36 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc988d70-299c-40f4-812b-dec4e1dea9d2")
+	)
+	(wire
+		(pts
 			(xy 309.88 45.72) (xy 323.85 45.72)
 		)
 		(stroke
@@ -2481,6 +2471,16 @@
 			(type default)
 		)
 		(uuid "f4383d50-b73d-4150-8e4b-d5bfe6344f07")
+	)
+	(wire
+		(pts
+			(xy 52.07 58.42) (xy 86.36 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f69bc03d-1f7a-4dac-80aa-9844ccce1f0f")
 	)
 	(wire
 		(pts
@@ -2673,7 +2673,7 @@
 		(uuid "57326e54-9c90-4e47-aebc-bb69b6aa57ee")
 	)
 	(label "USB2a_P"
-		(at 86.36 63.5 180)
+		(at 114.3 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2743,7 +2743,7 @@
 		(uuid "7620c66e-e8c9-4a2a-a3e8-7ad6ab8ae88b")
 	)
 	(label "USB2_P"
-		(at 64.77 63.5 180)
+		(at 86.36 63.5 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2813,7 +2813,7 @@
 		(uuid "8f6a2af5-c253-48ad-a6d3-ecadaf2a6ac1")
 	)
 	(label "USB2_N"
-		(at 64.77 58.42 180)
+		(at 86.36 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2963,7 +2963,7 @@
 		(uuid "db41ba36-7dad-4d99-837f-2e062b53f78d")
 	)
 	(label "USB2a_N"
-		(at 86.36 58.42 180)
+		(at 114.3 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3045,7 +3045,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.597 57.7342 0)
+			(at 81.026 53.848 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3731,7 +3731,7 @@
 	)
 	(symbol
 		(lib_id "Power_Protection:WE-TVS-82400102")
-		(at 72.39 60.96 0)
+		(at 93.98 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3742,7 +3742,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba8f824b-87e2-47fa-bb96-f6dcb39f8501")
 		(property "Reference" "U22"
-			(at 72.39 52.07 0)
+			(at 93.98 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3752,7 +3752,7 @@
 			)
 		)
 		(property "Value" "WE-TVS-82400102"
-			(at 72.39 54.61 0)
+			(at 93.98 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3762,7 +3762,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 72.39 66.04 0)
+			(at 93.98 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3773,7 +3773,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/82400102.pdf"
-			(at 72.39 67.31 0)
+			(at 93.98 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3784,7 +3784,7 @@
 			)
 		)
 		(property "Description" "Low Capacitance TVS Diode Array, 2 Channels, SOT-23-6"
-			(at 72.39 60.96 0)
+			(at 93.98 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
