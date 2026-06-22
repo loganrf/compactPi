@@ -1,15 +1,10 @@
-
-# Note
-
-On temporary hiatus
-
 # compactPi
 
 compactPi is a project to develop a compact Raspberry Pi Compute Module carrier suitable for ArduPilot applications. It's primarily targeted at marine applications (ArduSub/ArduRover).
 
 ## Milestones
 
-Given that this is a side project for me, I am being very conservative with these milestones. You may also note that it is a pretty long board assembly turn time to keep costs maneagble. Macrofab is the current turnkey vendor planned for use, although the design will target JLPCB & similar low-cost vendors in terms of complexity.
+As of June 2026, these milestones are way out of date due to personal circumstances. As I get back up to speed there will be substantial updates to this timeline!
 
 | # | Description | Estimated Time Frame| Status |
 |---|---|---|---|
