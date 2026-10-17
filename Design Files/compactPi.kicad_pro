@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.7,
-          "height": 2.7,
-          "width": 2.7
+          "drill": 0.0,
+          "height": 0.2,
+          "width": 0.55
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -51,7 +51,23 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.4
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.3,
+          "min_island_area": 10.0,
+          "min_thickness": 0.1,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.2,
+          "thermal_relief_spoke_width": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -61,16 +77,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "clearance|146205000|147060000|cf9a04ac-e742-4cc4-b820-74b94e875632|fd267553-ab4f-45b2-b9de-3fd8c755208d",
-          ""
-        ],
-        [
-          "clearance|159795000|147060000|386d8066-f8d7-448e-8535-fb964d94eab0|49b00fb2-fbf7-4862-ac04-916c407cd0f2",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -176,6 +183,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -187,6 +195,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -198,6 +207,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -251,6 +261,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.3,
+          "drill": 0.2
         },
         {
           "diameter": 0.3,
@@ -502,6 +516,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "error",
       "similar_power": "warning",
@@ -594,8 +609,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "USB",
@@ -805,7 +820,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "NT1",
+    "used_designators": "#PWR27,C34,NT1",
     "variants": []
   },
   "sheets": [
@@ -820,14 +835,6 @@
     [
       "00000000-0000-0000-0000-00005cff706a",
       "CM5 GPIO Ethernet SDIO"
-    ],
-    [
-      "49b509f9-5fb6-4956-8353-f70988d2ec73",
-      "Autopilot Sensors"
-    ],
-    [
-      "6f4957ac-74c1-4fd1-be80-64083fab81bc",
-      "PWM IO"
     ],
     [
       "efe27aed-b9d7-4250-8fde-aaa7412d6a69",

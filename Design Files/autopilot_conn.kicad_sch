@@ -13,203 +13,6 @@
 		(comment 3 "https://github.com/loganrf/compactPi")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic_MountingPin:Conn_01x02_MountingPin"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02_MountingPin"
-				(at 1.27 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_MountingPin_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 -4.572) (xy 1.016 -4.572)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Mounting"
-					(at 0 -4.191 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 3.048)
-					(name "MountPin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"
 			(pin_names
 				(offset 1.016)
@@ -2886,16 +2689,6 @@
 		)
 		(uuid "07c8fd67-bc83-43ac-991a-cc34717c43df")
 	)
-	(text "ADC"
-		(exclude_from_sim no)
-		(at 69.85 248.158 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1e77d6dd-f7b1-4f2a-8e9e-47fdab044dcd")
-	)
 	(text "Serial Interface"
 		(exclude_from_sim no)
 		(at 47.752 98.044 0)
@@ -2925,16 +2718,6 @@
 			)
 		)
 		(uuid "b382b40a-cdb9-45ff-8167-5b536aa5a567")
-	)
-	(text "LEAK"
-		(exclude_from_sim no)
-		(at 199.898 248.666 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b6b511fc-894c-4214-810d-16d8dd50f97f")
 	)
 	(text "CAN Interface"
 		(exclude_from_sim no)
@@ -3173,24 +2956,12 @@
 		(uuid "1b4faba7-a33c-45ef-a822-188a234249d9")
 	)
 	(no_connect
-		(at 210.82 256.54)
-		(uuid "315788ff-8fba-4c8b-983c-3e74b27d446d")
-	)
-	(no_connect
 		(at 68.58 151.13)
 		(uuid "4cac67d0-9a57-4611-9328-90fd252f9b3f")
 	)
 	(no_connect
 		(at 354.33 74.93)
 		(uuid "5d1a71fb-ef93-45ee-ae65-7b1793dfa5ef")
-	)
-	(no_connect
-		(at 210.82 267.97)
-		(uuid "6dbaf603-63a2-4314-bc55-63cc3bbdb640")
-	)
-	(no_connect
-		(at 71.12 265.43)
-		(uuid "7e8b17b1-be02-43ab-a34d-446724e44b7c")
 	)
 	(no_connect
 		(at 63.5 140.97)
@@ -12543,91 +12314,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
-		(at 210.82 260.35 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "897968fe-7713-4843-ba65-cad9a2033dcf")
-		(property "Reference" "J12"
-			(at 213.36 260.7055 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_MountingPin"
-			(at 213.36 263.2455 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical"
-			(at 210.82 260.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 260.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 210.82 260.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ddfe3829-aed5-471c-85bd-106e61f6e5a8")
-		)
-		(pin "1"
-			(uuid "312d22ce-d842-4a6a-ab3d-a03218a8e590")
-		)
-		(pin "MP"
-			(uuid "326f6449-1ff2-426f-9807-ee1b9400d3b0")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
-					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Filter:Choke_CommonMode_FerriteCore_1234")
 		(at 288.29 63.5 0)
 		(unit 1)
@@ -12949,91 +12635,6 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
 					(reference "#PWR060")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
-		(at 210.82 248.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a3270025-3dbe-4f99-87eb-dd2779f399ac")
-		(property "Reference" "J13"
-			(at 213.36 249.2755 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02_MountingPin"
-			(at 213.36 251.8155 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical"
-			(at 210.82 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 210.82 248.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "329c938a-537a-44c5-8290-ef3c86a5152c")
-		)
-		(pin "1"
-			(uuid "c0197926-564e-4dd2-8938-c64d5cb8a218")
-		)
-		(pin "MP"
-			(uuid "a2623c1c-d7f6-49d6-92ed-ac4db5f67bd7")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
-					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -14006,97 +13607,6 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
 					(reference "C53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 71.12 255.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fcf3e2b8-015b-4315-a933-d33a7786fd77")
-		(property "Reference" "J3"
-			(at 73.66 255.6255 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_MountingPin"
-			(at 73.66 258.1655 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_BM04B-GHS-TBT_1x04-1MP_P1.25mm_Vertical"
-			(at 71.12 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 71.12 255.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "MP"
-			(uuid "aed34b0c-fa89-431d-88cf-40198e2905d4")
-		)
-		(pin "1"
-			(uuid "e9c223f0-6f75-4dee-b3c1-3e0584dd72d7")
-		)
-		(pin "2"
-			(uuid "f6d2058d-3832-4814-9aeb-78b733d54dd1")
-		)
-		(pin "4"
-			(uuid "e834ac98-cec6-4f52-95dc-160dab0b043a")
-		)
-		(pin "3"
-			(uuid "4932def6-77b1-4d28-a69e-5eabc292f5b4")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
-					(reference "J3")
 					(unit 1)
 				)
 			)

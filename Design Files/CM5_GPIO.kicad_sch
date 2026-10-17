@@ -12267,7 +12267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CM5IO:SDCARD_MOLEX_503398-1892"
+		(property "Footprint" "Connector_Card:microSD_HC_Molex_104031-0811"
 			(at 356.87 110.49 0)
 			(hide yes)
 			(show_name no)
