@@ -63,3 +63,5 @@ As of June 2026, these milestones are way out of date due to personal circumstan
 # Stackup
 ![Stackup Diagram From KiCAD](Assets/Stackup.png)
 
+![JLPCB Stackup](image.png)
+

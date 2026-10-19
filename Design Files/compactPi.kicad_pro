@@ -235,16 +235,16 @@
         "diff_pair_defaults": {
           "corner_radius_percentage": 100,
           "corner_style": 1,
-          "max_amplitude": 1.0,
+          "max_amplitude": 0.5,
           "min_amplitude": 0.1,
           "single_sided": false,
-          "spacing": 0.6
+          "spacing": 1.0
         },
         "diff_pair_skew_defaults": {
           "corner_radius_percentage": 100,
           "corner_style": 1,
-          "max_amplitude": 0.5,
-          "min_amplitude": 0.05,
+          "max_amplitude": 0.2,
+          "min_amplitude": 0.1,
           "single_sided": false,
           "spacing": 0.3
         },
@@ -562,48 +562,34 @@
       },
       {
         "clearance": 0.125,
-        "diff_pair_gap": 0.2,
-        "diff_pair_width": 0.3,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Ethernet",
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1191,
+        "name": "100",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.127,
-        "tuning_profile": "",
-        "via_diameter": 0.3,
-        "via_drill": 0.25
+        "track_width": 0.1191,
+        "tuning_profile": ""
       },
       {
         "clearance": 0.125,
-        "diff_pair_gap": 0.2,
-        "diff_pair_width": 0.3,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "HDMI",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.127,
-        "tuning_profile": "",
-        "via_diameter": 0.3,
-        "via_drill": 0.25
-      },
-      {
-        "clearance": 0.125,
-        "diff_pair_gap": 0.385229,
-        "diff_pair_width": 0.364924,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "USB",
+        "name": "50",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.364924,
-        "tuning_profile": "",
-        "via_diameter": 0.5,
-        "via_drill": 0.25
+        "track_width": 0.1509,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.125,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_width": 0.1537,
+        "name": "90",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1537,
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -613,20 +599,28 @@
     "netclass_assignments": {},
     "netclass_patterns": [
       {
-        "netclass": "USB",
-        "pattern": "/USB*_*"
+        "netclass": "100",
+        "pattern": "/CM5 USB HDMI/HDMI0_D*"
       },
       {
-        "netclass": "HDMI",
-        "pattern": "/CM5_HighSpeed/HDMI0_*_*"
+        "netclass": "100",
+        "pattern": "/CM5 USB HDMI/HDMI0_CK*"
       },
       {
-        "netclass": "Ethernet",
-        "pattern": "/CM5_GPIO ( Ethernet, GPIO, SDCARD)/TR*"
+        "netclass": "50",
+        "pattern": "/CM5 GPIO Ethernet SDIO/SD_D*"
       },
       {
-        "netclass": "USB",
-        "pattern": "/CM5_HighSpeed/USB*"
+        "netclass": "50",
+        "pattern": "/CM5 GPIO Ethernet SDIO/SD_CLK"
+      },
+      {
+        "netclass": "100",
+        "pattern": "/CM5 GPIO Ethernet SDIO/TRD*"
+      },
+      {
+        "netclass": "90",
+        "pattern": "/USB*"
       }
     ]
   },
@@ -820,7 +814,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "#PWR27,C34,NT1",
+    "used_designators": "#PWR27,C34,NT1,U22",
     "variants": []
   },
   "sheets": [

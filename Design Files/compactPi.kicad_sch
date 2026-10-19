@@ -2990,6 +2990,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Power_Protection:WE-TVS-82400102")
+		(at 93.98 60.96 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "815d574e-4784-4089-a3a7-fd91ef27e94f")
+		(property "Reference" "U22"
+			(at 93.98 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WE-TVS-82400102"
+			(at 93.98 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 93.98 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/82400102.pdf"
+			(at 93.98 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low Capacitance TVS Diode Array, 2 Channels, SOT-23-6"
+			(at 93.98 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "fa071701-9559-4c24-87cb-c97bc605d3d0")
+		)
+		(pin "6"
+			(uuid "5385e879-9f5b-4aaa-8e93-e3aca978c4fc")
+		)
+		(pin "5"
+			(uuid "03e202fb-5869-4dc4-858a-78439c55f46c")
+		)
+		(pin "4"
+			(uuid "875d87c4-c76d-42f3-a123-123a6dfe3858")
+		)
+		(pin "2"
+			(uuid "5f332d5f-f9eb-48c8-b383-885e1c95b869")
+		)
+		(pin "1"
+			(uuid "94c298ba-b019-4dab-8f3f-c5f1795e4cf5")
+		)
+		(instances
+			(project "compactPi"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "U22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 36.83 60.96 0)
 		(unit 1)
@@ -3456,98 +3548,6 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power_Protection:WE-TVS-82400102")
-		(at 93.98 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba8f824b-87e2-47fa-bb96-f6dcb39f8501")
-		(property "Reference" "U22"
-			(at 93.98 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WE-TVS-82400102"
-			(at 93.98 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 93.98 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/82400102.pdf"
-			(at 93.98 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Low Capacitance TVS Diode Array, 2 Channels, SOT-23-6"
-			(at 93.98 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "c3d21423-e5e5-4e8f-967b-ba2b8e964a8a")
-		)
-		(pin "6"
-			(uuid "7e2b9222-9139-4e40-8756-de6f803eee5f")
-		)
-		(pin "5"
-			(uuid "e0d9b703-e650-4266-a193-f6ca631113bc")
-		)
-		(pin "4"
-			(uuid "1a3bffa2-bbbe-4a7d-b961-14596afcbafb")
-		)
-		(pin "2"
-			(uuid "89bb6b67-72d8-4b46-8c1f-bfea06b7b56f")
-		)
-		(pin "1"
-			(uuid "22ac1edb-5ac6-4f60-9ef1-a862253a0faa")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "U22")
 					(unit 1)
 				)
 			)

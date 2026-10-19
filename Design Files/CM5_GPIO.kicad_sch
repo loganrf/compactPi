@@ -7149,16 +7149,6 @@
 	)
 	(wire
 		(pts
-			(xy 298.45 58.42) (xy 269.24 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0631c49d-43ef-4fcc-b46f-4275c907b144")
-	)
-	(wire
-		(pts
 			(xy 78.74 133.35) (xy 88.9 133.35)
 		)
 		(stroke
@@ -7617,6 +7607,16 @@
 		)
 		(uuid "3f14ea49-be66-46f4-9926-3bd40ac115b6")
 	)
+	(wire
+		(pts
+			(xy 298.45 53.34) (xy 298.45 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f8d6f0d-af39-4ba1-845e-22a37235bc9b")
+	)
 	(polyline
 		(pts
 			(xy 232.41 16.51) (xy 332.74 16.51)
@@ -7666,6 +7666,16 @@
 			(type solid)
 		)
 		(uuid "4805cbab-da73-4d3e-afa3-21868e76e954")
+	)
+	(wire
+		(pts
+			(xy 269.24 58.42) (xy 294.64 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4970f6b7-cfe9-4ee4-894a-0f874d3630d8")
 	)
 	(wire
 		(pts
@@ -7759,6 +7769,16 @@
 	)
 	(wire
 		(pts
+			(xy 294.64 58.42) (xy 294.64 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5545c912-cc7b-4555-ab7b-2723f789059b")
+	)
+	(wire
+		(pts
 			(xy 149.86 123.19) (xy 149.86 125.73)
 		)
 		(stroke
@@ -7806,16 +7826,6 @@
 			(type solid)
 		)
 		(uuid "5b9a3805-90b0-44a6-a86e-5b6c07ff9037")
-	)
-	(wire
-		(pts
-			(xy 298.45 50.8) (xy 298.45 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c50d500-ec5b-42d2-8b34-1d9386d4d7ff")
 	)
 	(wire
 		(pts
@@ -7889,17 +7899,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 45.72) (xy 294.64 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "691e1277-fd91-4172-b238-fa65ebb00770")
-	)
-	(wire
-		(pts
-			(xy 294.64 53.34) (xy 269.24 53.34)
+			(xy 269.24 53.34) (xy 298.45 53.34)
 		)
 		(stroke
 			(width 0)
@@ -10062,7 +10062,7 @@
 		)
 		(uuid "60ecfc87-7129-4e57-8de7-d60bf883bdf8")
 	)
-	(label "TRD1_P"
+	(label "TRD1_N"
 		(at 238.76 53.34 0)
 		(effects
 			(font
@@ -10112,7 +10112,7 @@
 		)
 		(uuid "7e11542a-c428-4e80-830e-94b7e05e0716")
 	)
-	(label "TRD1_N"
+	(label "TRD1_P"
 		(at 238.76 58.42 0)
 		(effects
 			(font
@@ -10352,7 +10352,7 @@
 		)
 		(uuid "d3a64311-031c-492b-817d-d8c8c6fedbb6")
 	)
-	(label "TRD1_RX_P"
+	(label "TRD1_RX_N"
 		(at 271.78 53.34 0)
 		(effects
 			(font
@@ -10422,8 +10422,8 @@
 		)
 		(uuid "f573056c-87a1-403e-987f-f1dc1f10bd0b")
 	)
-	(label "TRD1_RX_N"
-		(at 287.02 58.42 0)
+	(label "TRD1_RX_P"
+		(at 278.13 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
