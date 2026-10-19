@@ -1868,6 +1868,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 128.27) (xy 49.53 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "275828fa-d429-4a3c-85ce-49551e391623")
+	)
+	(wire
+		(pts
 			(xy 39.37 138.43) (xy 49.53 138.43)
 		)
 		(stroke
@@ -2015,6 +2025,16 @@
 			(type default)
 		)
 		(uuid "51a3e31d-fbb5-4b50-b633-3c307c84045e")
+	)
+	(wire
+		(pts
+			(xy 220.98 151.13) (xy 234.95 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a8d994e-380c-42b5-8ce9-a6ac71d522a5")
 	)
 	(wire
 		(pts
@@ -2278,6 +2298,16 @@
 	)
 	(wire
 		(pts
+			(xy 308.61 148.59) (xy 322.58 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d045a94e-f4ae-4d23-9c45-a4df544c22c9")
+	)
+	(wire
+		(pts
 			(xy 52.07 58.42) (xy 52.07 60.96)
 		)
 		(stroke
@@ -2415,6 +2445,16 @@
 			(justify left bottom)
 		)
 		(uuid "26c06159-137e-4fff-931c-490a8d05338b")
+	)
+	(label "CAN_nINT"
+		(at 308.61 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27c51889-6497-44e0-8426-7708f38a291f")
 	)
 	(label "5V0_CORE"
 		(at 234.95 143.51 180)
@@ -2686,6 +2726,16 @@
 		)
 		(uuid "ab55920c-fac6-4b86-a8a8-19528e7eb6f7")
 	)
+	(label "CAN_nINT"
+		(at 234.95 151.13 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c111d703-71e7-44ed-8990-62a25cf8d847")
+	)
 	(label "I2C_INT_SDA0"
 		(at 148.59 130.81 0)
 		(effects
@@ -2776,7 +2826,7 @@
 		)
 		(uuid "f7cb2b33-8aec-4a18-b93a-585483eb7af2")
 	)
-	(label "5V_Peripheral"
+	(label "5V0_PERIPHERAL"
 		(at 146.05 90.17 0)
 		(effects
 			(font
@@ -2785,6 +2835,16 @@
 			(justify left bottom)
 		)
 		(uuid "fa604ce9-1e26-4467-8428-80e2e33ecc2f")
+	)
+	(label "3V3"
+		(at 39.37 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa7f8225-850f-4208-aa33-2dbd65fa3250")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3450,7 +3510,7 @@
 		(dnp no)
 		(uuid "b30c000d-795b-488f-8e69-a058391ab578")
 		(property "Reference" "R12"
-			(at 72.898 47.625 0)
+			(at 71.882 47.498 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3460,8 +3520,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2K 1%"
-			(at 67.818 49.53 0)
+		(property "Value" "10k"
+			(at 71.882 49.022 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3989,6 +4049,16 @@
 				(justify left)
 			)
 		)
+		(pin "CAN_nINT" input
+			(at 220.98 151.13 0)
+			(uuid "0ba59b7c-03a8-485b-b35c-08817519f764")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -4205,9 +4275,9 @@
 				(justify right)
 			)
 		)
-		(pin "5V0_Peripheral" input
+		(pin "5V0_PERIPHERAL" input
 			(at 163.83 90.17 180)
-			(uuid "c49d9d00-5c81-4bff-b4dd-8dd8d41eb117")
+			(uuid "aadf6cd8-a06a-4bd2-b282-ac229c251666")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4379,6 +4449,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "3V3_IN" input
+			(at 49.53 128.27 180)
+			(uuid "c73a43cc-8a49-4843-9a58-682f1c7c6355")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

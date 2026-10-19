@@ -6825,17 +6825,6 @@
 		)
 		(uuid "67485507-feb4-40bf-8b31-435bf88778c2")
 	)
-	(text "Force RPIBOOT = Jumper Pins 1-2 \n"
-		(exclude_from_sim no)
-		(at 106.045 165.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c78980a8-e749-4c70-b9e3-d042eb419706")
-	)
 	(text "PWR LED"
 		(exclude_from_sim no)
 		(at 212.725 113.665 0)
@@ -7249,16 +7238,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 175.26) (xy 77.47 175.26)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "0f47421c-1e82-4036-b8e8-a06d02b43b87")
-	)
-	(wire
-		(pts
 			(xy 149.86 120.65) (xy 163.83 120.65)
 		)
 		(stroke
@@ -7276,16 +7255,6 @@
 			(type solid)
 		)
 		(uuid "114181eb-7392-4a8c-8162-9def16899b0d")
-	)
-	(wire
-		(pts
-			(xy 90.17 175.26) (xy 104.14 175.26)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "115c8e86-c44c-49a7-bc69-7044c5ce83c9")
 	)
 	(wire
 		(pts
@@ -7336,16 +7305,6 @@
 			(type solid)
 		)
 		(uuid "18ca81dd-94c5-4d8f-956e-df7c87fd0b93")
-	)
-	(wire
-		(pts
-			(xy 67.31 172.72) (xy 104.14 172.72)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "1913ae2c-1bc2-48d9-914f-4c532d02ffb4")
 	)
 	(wire
 		(pts
@@ -8526,16 +8485,6 @@
 			(type default)
 		)
 		(uuid "d09f24a3-f4a6-40a2-a5df-418fb181b6a2")
-	)
-	(wire
-		(pts
-			(xy 67.31 172.72) (xy 67.31 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d1718049-ea50-43e8-93c7-73a9aba2e36a")
 	)
 	(wire
 		(pts
@@ -9832,16 +9781,6 @@
 		)
 		(uuid "1a6cbd94-89ce-40b4-bf57-ce02cce2f2a0")
 	)
-	(label "GPIO25"
-		(at 160.02 74.93 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1a9e2b11-80b9-435f-a9bf-a5b45e4a1043")
-	)
 	(label "SD_DAT0"
 		(at 161.29 102.87 180)
 		(effects
@@ -10102,16 +10041,6 @@
 		)
 		(uuid "7bd6a5a6-975a-47f2-9ae0-724cced216ae")
 	)
-	(label "GND"
-		(at 72.39 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7e11542a-c428-4e80-830e-94b7e05e0716")
-	)
 	(label "TRD1_P"
 		(at 238.76 58.42 0)
 		(effects
@@ -10222,16 +10151,6 @@
 		)
 		(uuid "a0253646-12c0-442b-832b-a3c949927ecd")
 	)
-	(label "nRPIBOOT"
-		(at 100.076 172.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a5b2a88f-fa1e-47a1-b1fe-06f37e21ca1b")
-	)
 	(label "3V3"
 		(at 198.12 93.98 180)
 		(effects
@@ -10261,16 +10180,6 @@
 			(justify left bottom)
 		)
 		(uuid "bdc5ca11-10e5-4600-9ef9-bb85404d6bea")
-	)
-	(label "EEPROM_nWP"
-		(at 103.378 175.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "be0005d6-fe27-4790-8dca-71a7c48d5d83")
 	)
 	(label "TRD0_TX_P"
 		(at 271.78 43.18 0)
@@ -10402,16 +10311,6 @@
 		)
 		(uuid "e196416c-d4d1-42d4-979d-990a370627ba")
 	)
-	(label "GND"
-		(at 72.39 175.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e74c1c14-2c10-4ed2-af66-d46451b14517")
-	)
 	(label "SD_CLK"
 		(at 273.05 128.27 0)
 		(effects
@@ -10519,7 +10418,7 @@
 		)
 		(uuid "4c3becc9-79e1-4d4a-a3fd-a6e8750302a2")
 	)
-	(hierarchical_label "SPI_CIPO1"
+	(hierarchical_label "SPI_COPI1"
 		(shape input)
 		(at 163.83 57.15 0)
 		(effects
@@ -10529,6 +10428,17 @@
 			(justify left)
 		)
 		(uuid "5279123e-8a4e-4a53-9481-d9ee9c262276")
+	)
+	(hierarchical_label "CAN_nINT"
+		(shape input)
+		(at 163.83 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "547f97ca-9387-405b-b2fb-077e97388349")
 	)
 	(hierarchical_label "SPI_0_CE0"
 		(shape output)
@@ -10563,7 +10473,7 @@
 		)
 		(uuid "728f3562-bb3e-44de-8c11-039e0c9922d9")
 	)
-	(hierarchical_label "SPI_COPI0"
+	(hierarchical_label "SPI_CIPO0"
 		(shape output)
 		(at 73.66 72.39 180)
 		(effects
@@ -10596,7 +10506,7 @@
 		)
 		(uuid "a2a2770e-8990-4859-a362-79c1020cc291")
 	)
-	(hierarchical_label "SPI_CIPO0"
+	(hierarchical_label "SPI_COPI0"
 		(shape input)
 		(at 73.66 77.47 180)
 		(effects
@@ -10662,7 +10572,7 @@
 		)
 		(uuid "e87c0eea-d4cc-4866-ab01-193852fa8262")
 	)
-	(hierarchical_label "SPI_COPI1"
+	(hierarchical_label "SPI_CIPO1"
 		(shape output)
 		(at 73.66 54.61 180)
 		(effects

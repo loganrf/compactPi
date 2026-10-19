@@ -68,7 +68,7 @@ Top-level sheet-pin wiring, as it actually resolves:
 | — | `/5V0_PERIPHERAL` | MCP25625 VDD/VDDA, J4, J6–J10 pin 1, C64–C67 — **no source** |
 | — | `/5V_Peripheral` | J11 VBUS, U17 (HDMI 5 V switch) IN — **no source** |
 
-KiCad labels are case-sensitive, and a local label and a hierarchical label with the same text on one sheet are *different* nets.
+KiCad labels are case-sensitive. *(Correction, re-review: a local label and a hierarchical label with the same text on one sheet **are** merged by KiCad — the original statement here was wrong; it did not change the conclusion for the wiring as it stood.)*
 **Fix:** pick one name (`5V0_PERIPH`), use it for the Power sheet pin, both consumer-sheet pins and the top-level wires; delete the other two. Decide what PP5V should be (see M-02) rather than leaving it on a look-alike net.
 
 ### C-03 — Core 5 V path to the CM5 is open in the PCB
@@ -229,6 +229,28 @@ J11 pin 1 is wired straight to the peripheral rail (once C-02 is fixed). USB hos
 4. Switch the stackup to the JLC variant you'll actually order, re-check impedance widths and the inner-layer copper, then finish placement (thermal vias, parked parts, pours off In1/In4).
 5. BOM pass: every Value/MPN populated (R1, R2, U3, FB1/2, Y1), cap voltage ratings, C46/C47.
 6. Update README (scope, 47 mm, interface table, J5 pinout) and retire the autopilot naming.
+
+## Re-review — commit 20c4914 "some stuff fixed" (2026-10-19 PM)
+
+Re-extracted both netlists; PCB and schematic are in sync. `CM5_GPIO.kicad_sch` and `CM5_HighSpeed.kicad_sch` are unchanged since the first review, so every finding located on those sheets is still open.
+
+| ID | Status | Evidence in current files |
+|---|---|---|
+| C-01 | ❌ Open | R10 / R13 still 53.6 kΩ over 10 kΩ → **6.36 V** on both rails |
+| C-02 | ⚠️ Partial | `/5V0_PERIPHERAL` now sourced by U14→FB2 (CAN, J4, J6–J10 powered). `/5V_Peripheral` (J11 USB-host VBUS, U17 HDMI 5 V) still has **no source**. Power sheet still has an orphan `5V_PERIPHERAL` pin. |
+| C-03 | ⚠️ Partial | FB1/FB2 now have 0805 footprints and are in the PCB, so the core path is closed. Still no value/MPN; an 0805 bead must be rated ≥ 5 A with low DCR for a 3 A CM5 rail — 0 Ω or a direct connection remains the safer choice. |
+| C-04 | ✅ Fixed | J15 CC1/CC2 → U3 CC1/CC2 |
+| C-05 | ❌ Open | U21 VDD (pin 3) still on 5 V; only VIO is on 3V3 |
+| C-06 | ❌ Open (changed) | R27 10 k to 3V3 added, but R23 10 k to GND is still fitted → ~RESET sits at **1.65 V**, below VIH, so the part stays in reset. Remove R23. R27 is also still parked off-board. |
+| C-07 | ❌ Open | GPIO19 → U21 SI, GPIO20 → U21 SO (still swapped) |
+| C-08 | ❌ Open | U21 ~INT is a single-pin net |
+| C-09 | ❌ Open | Module1 pin 93 (nRPIBOOT) still on GND |
+| C-10 | ❌ Open | J4 / J10 pins 2–3 still single-pin nets |
+
+Changes outside the critical list:
+- **M-05 (partial):** F1/F2 added ahead of the TVS diodes. Reversed polarity now opens a fuse instead of burning the TVS. Two caveats: the value "10A" has no MPN, and 10 A is above the Nano-Fit per-contact rating (~6.5 A). Pick a specific 1206 part and size it to the connector/copper (roughly 5–7 A, slow-blow for the input-cap inrush). The TVS clamp above 40 V is still open.
+- **PP5V now tied to the peripheral rail** (via the label merge). This makes the TPS25751 capable of *sourcing* 5 V out of the USB-C port, if its configuration allows the source role. Decide deliberately (S-05); if sink-only, configure it that way in the EEPROM image. PP5V also needs ≥ 10 µF at the pin.
+- Still open: M-01 (ADCIN floating, R1/R2 unvalued), M-03 (U22/U23 GND pins NC), M-04 (R12), M-06, M-07, M-08 (J14/J15 shield pads still no-net), M-09, and M-10 (C19/C21/C26, R5/R6/R12/R19–R21, C54/C56, D4, NT1, R27 still parked; V_COMMON pour still on In4; 0.3/0.2 vias still present; MacroFab stackup still in the board file). U23 is now placed.
 
 ## Sources
 

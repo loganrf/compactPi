@@ -2768,10 +2768,10 @@
 		(uuid "16299533-924c-4d4a-a237-396fc191fc6a")
 	)
 	(junction
-		(at 250.19 33.02)
+		(at 215.9 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1d9dbc77-03fe-42bb-ac05-b25d3b2d7da2")
+		(uuid "240f4d6f-7c1c-4c54-9276-47b517419a4b")
 	)
 	(junction
 		(at 58.42 146.05)
@@ -2918,6 +2918,12 @@
 		(uuid "d3d8ea2a-e6b1-4e8c-9fa5-f47b74881bf2")
 	)
 	(junction
+		(at 250.19 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6556c38-498c-4a47-b1c9-04f40aa15003")
+	)
+	(junction
 		(at 252.73 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3035,7 +3041,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 138.43) (xy 63.5 138.43)
+			(xy 40.64 135.89) (xy 63.5 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3085,7 +3091,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 49.53) (xy 229.87 49.53)
+			(xy 212.09 49.53) (xy 215.9 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3202,6 +3208,16 @@
 			(type default)
 		)
 		(uuid "3044825f-f65f-4c5e-bcf3-cbb711bdcb73")
+	)
+	(wire
+		(pts
+			(xy 250.19 49.53) (xy 252.73 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30cab25e-fb13-48ee-ae6d-c099e3f855d3")
 	)
 	(wire
 		(pts
@@ -3385,7 +3401,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 33.02) (xy 257.81 33.02)
+			(xy 242.57 33.02) (xy 257.81 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3475,6 +3491,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 49.53) (xy 250.19 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "575d5727-71e0-479c-b30c-c863e62e9045")
+	)
+	(wire
+		(pts
 			(xy 53.34 48.26) (xy 53.34 30.48)
 		)
 		(stroke
@@ -3505,7 +3531,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 135.89) (xy 63.5 135.89)
+			(xy 40.64 138.43) (xy 63.5 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3645,16 +3671,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 33.02) (xy 250.19 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "741ba532-9fd5-47be-8807-9de350ea6519")
-	)
-	(wire
-		(pts
 			(xy 194.31 87.63) (xy 194.31 91.44)
 		)
 		(stroke
@@ -3742,16 +3758,6 @@
 			(type default)
 		)
 		(uuid "86c3ee74-6761-4513-96ea-0282fab1be48")
-	)
-	(wire
-		(pts
-			(xy 242.57 33.02) (xy 250.19 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "872525fd-f511-40c8-9506-47ca7334f31d")
 	)
 	(wire
 		(pts
@@ -4105,7 +4111,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 115.57) (xy 63.5 115.57)
+			(xy 40.64 118.11) (xy 63.5 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4115,7 +4121,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 49.53) (xy 252.73 49.53)
+			(xy 234.95 49.53) (xy 250.19 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4172,6 +4178,16 @@
 			(type default)
 		)
 		(uuid "e93b9ca7-3cc5-4733-898a-e21f0c843289")
+	)
+	(wire
+		(pts
+			(xy 215.9 49.53) (xy 229.87 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ead06691-4f68-4699-a554-6d6e432fe470")
 	)
 	(wire
 		(pts
@@ -4235,7 +4251,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 118.11) (xy 63.5 118.11)
+			(xy 40.64 115.57) (xy 63.5 115.57)
 		)
 		(stroke
 			(width 0)
@@ -10004,7 +10020,7 @@
 		)
 	)
 	(label "UART2_RX_In"
-		(at 40.64 135.89 0)
+		(at 40.64 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10024,7 +10040,7 @@
 		(uuid "08f7489f-b892-4b32-a5ef-b997cb668a5a")
 	)
 	(label "UART1_RX_In"
-		(at 40.64 115.57 0)
+		(at 40.64 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10094,7 +10110,7 @@
 		(uuid "52a2f071-d641-455d-a289-6e4fe534171f")
 	)
 	(label "UART1_TX_Out"
-		(at 40.64 118.11 0)
+		(at 40.64 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10204,7 +10220,7 @@
 		(uuid "b3b84986-4e5c-4219-849c-92d375b91f8b")
 	)
 	(label "UART2_TX_Out"
-		(at 40.64 138.43 0)
+		(at 40.64 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10306,7 +10322,7 @@
 	)
 	(hierarchical_label "UART2_TX_Out"
 		(shape input)
-		(at 40.64 138.43 180)
+		(at 40.64 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10317,7 +10333,7 @@
 	)
 	(hierarchical_label "3V3"
 		(shape input)
-		(at 228.6 49.53 180)
+		(at 212.09 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10328,7 +10344,7 @@
 	)
 	(hierarchical_label "UART1_RX_In"
 		(shape output)
-		(at 40.64 115.57 180)
+		(at 40.64 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10394,7 +10410,7 @@
 	)
 	(hierarchical_label "UART2_RX_In"
 		(shape output)
-		(at 40.64 135.89 180)
+		(at 40.64 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10405,7 +10421,7 @@
 	)
 	(hierarchical_label "UART1_TX_Out"
 		(shape input)
-		(at 40.64 118.11 180)
+		(at 40.64 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11169,8 +11185,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin")
-		(at 68.58 118.11 0)
+		(lib_id "Device:C_Small_US")
+		(at 215.9 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11179,9 +11195,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "333bbeb0-8302-450f-a774-6ad1035c4d57")
-		(property "Reference" "J4"
-			(at 71.12 118.4655 0)
+		(uuid "358f5d89-a4ba-4a43-9a83-183fa1e960de")
+		(property "Reference" "C69"
+			(at 218.44 50.9269 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11191,8 +11207,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x06_MountingPin"
-			(at 71.12 121.0055 0)
+		(property "Value" "10u"
+			(at 218.44 53.4669 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11202,8 +11218,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
-			(at 68.58 118.11 0)
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
+			(at 215.9 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11214,7 +11230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 118.11 0)
+			(at 215.9 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11224,8 +11240,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 68.58 118.11 0)
+		(property "Description" "capacitor, small US symbol"
+			(at 215.9 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11236,30 +11252,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0f6f316e-5ab9-410a-8142-9046c131c0c6")
-		)
-		(pin "6"
-			(uuid "ce612303-9cc4-49f7-bd95-55c7c252cee4")
-		)
-		(pin "MP"
-			(uuid "de2db2f8-9bbb-4fcf-b587-becb1a647b86")
-		)
-		(pin "5"
-			(uuid "d5adb868-8c7c-4ea8-986f-a72316bf5420")
-		)
-		(pin "4"
-			(uuid "bdbcfcbf-8b14-46b2-97d1-7aec81633e58")
+			(uuid "1449cda9-44d2-491b-9ded-8df7f454e20c")
 		)
 		(pin "2"
-			(uuid "967de6d1-ddea-4d3d-bacf-8328720bb908")
-		)
-		(pin "3"
-			(uuid "a33677e7-49a2-467a-81ca-d42ef3122e5a")
+			(uuid "5732a412-4ccc-41cf-a5b8-038153db22be")
 		)
 		(instances
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
-					(reference "J4")
+					(reference "C69")
 					(unit 1)
 				)
 			)
@@ -11423,103 +11424,6 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
 					(reference "U21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin")
-		(at 68.58 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3cd5122b-954a-41ca-88ae-857617983aa7")
-		(property "Reference" "J10"
-			(at 71.12 138.7855 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x06_MountingPin"
-			(at 71.12 141.3255 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
-			(at 68.58 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 68.58 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2972ed38-c0e7-485f-8d23-30ce07d355cc")
-		)
-		(pin "6"
-			(uuid "42f9b6ed-09c9-40ec-aa0d-3f33172d63d7")
-		)
-		(pin "MP"
-			(uuid "71e9153c-451c-4b97-a199-951e2ff8ea64")
-		)
-		(pin "5"
-			(uuid "c43f311f-c2c6-41e4-b4cb-403ae79cc796")
-		)
-		(pin "4"
-			(uuid "858bcab0-7aa2-4731-8554-c6b09b280b0a")
-		)
-		(pin "2"
-			(uuid "d320274c-0a6f-4c7a-a49b-96c700c10ab5")
-		)
-		(pin "3"
-			(uuid "2897bf52-d0b4-40a8-a0c9-64bf5bc845a8")
-		)
-		(instances
-			(project "compactPi"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
-					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -12378,7 +12282,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "824d7ca8-eeb8-49a8-bbaf-57a5028ef334")
 		(property "Reference" "R23"
@@ -12532,6 +12436,83 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
 					(reference "FL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "922dc298-4629-4237-a14d-84b8c322a75f")
+		(property "Reference" "#PWR053"
+			(at 215.9 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 216.027 59.0042 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a161531-5e45-4867-b28c-9a1c09cfa781")
+		)
+		(instances
+			(project "compactPi"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -12864,6 +12845,103 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin")
+		(at 68.58 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7f38e3d-f42d-401c-bdc1-3777e443789b")
+		(property "Reference" "J4"
+			(at 71.12 118.4655 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x06_MountingPin"
+			(at 71.12 121.0055 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
+			(at 68.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 68.58 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94491161-1c48-4298-a69a-4df61a8838e6")
+		)
+		(pin "6"
+			(uuid "f7a3d486-d636-4c1b-b2dc-9f1e3df36422")
+		)
+		(pin "MP"
+			(uuid "f0748682-3821-411c-9fcf-1753b0d1913c")
+		)
+		(pin "5"
+			(uuid "b19142ff-7e9b-4c31-bc67-a90ae549494e")
+		)
+		(pin "4"
+			(uuid "645a5e5e-31ea-4cd8-bd37-4a2b87d6d206")
+		)
+		(pin "2"
+			(uuid "190c7f45-c78d-4576-b0ed-201977d2111f")
+		)
+		(pin "3"
+			(uuid "36fa9d0f-2923-4aab-b516-5c0f3a27ae84")
+		)
+		(instances
+			(project "compactPi"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -13336,6 +13414,103 @@
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
 					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x06_MountingPin")
+		(at 68.58 138.43 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d95f894e-7eef-4b3b-8fc2-b2de9f02b566")
+		(property "Reference" "J10"
+			(at 71.12 138.7855 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x06_MountingPin"
+			(at 71.12 141.3255 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_GH_BM06B-GHS-TBT_1x06-1MP_P1.25mm_Vertical"
+			(at 68.58 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 68.58 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6894f0c1-4fdf-4971-932f-a5b3cb81447f")
+		)
+		(pin "6"
+			(uuid "65935896-796d-4388-8e76-1faea5de39e8")
+		)
+		(pin "MP"
+			(uuid "02a569fe-7fe7-4c17-a08f-eda5506ee68c")
+		)
+		(pin "5"
+			(uuid "07e2cc92-6400-42d9-9189-9798fedf4ed2")
+		)
+		(pin "4"
+			(uuid "57198365-3951-4a80-b0c2-9921cc081ad8")
+		)
+		(pin "2"
+			(uuid "8951f3e4-2152-4012-8884-172057a35387")
+		)
+		(pin "3"
+			(uuid "891156fd-951c-4659-8284-368306854790")
+		)
+		(instances
+			(project "compactPi"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/efe27aed-b9d7-4250-8fde-aaa7412d6a69"
+					(reference "J10")
 					(unit 1)
 				)
 			)

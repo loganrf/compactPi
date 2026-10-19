@@ -621,6 +621,10 @@
       {
         "netclass": "90",
         "pattern": "/USB*"
+      },
+      {
+        "netclass": "90",
+        "pattern": "/CM5 USB HDMI/USB3*"
       }
     ]
   },
@@ -814,7 +818,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "#PWR27,C34,F1-2,NT1,R27,U22",
+    "used_designators": "#PWR27-28,#PWR53,#PWR132,C25,C27,C34-35,C69,F1-2,J4,J10,NT1,R15-18,R27,U22",
     "variants": []
   },
   "sheets": [
