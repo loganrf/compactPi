@@ -1687,14 +1687,6 @@
 		(uuid "d98a32f3-e6f4-4eae-bc37-ca02535e1569")
 	)
 	(no_connect
-		(at 49.53 140.97)
-		(uuid "04360722-9e90-45ed-b906-0ac6ff346fdf")
-	)
-	(no_connect
-		(at 49.53 138.43)
-		(uuid "39ea90aa-e9fc-4190-b852-d7754bc38124")
-	)
-	(no_connect
 		(at 220.98 66.04)
 		(uuid "442ff231-3191-4b3b-877b-d37804c66484")
 	)
@@ -1876,6 +1868,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 138.43) (xy 49.53 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27867df4-727d-4422-8d45-125183330cde")
+	)
+	(wire
+		(pts
 			(xy 146.05 90.17) (xy 163.83 90.17)
 		)
 		(stroke
@@ -1893,6 +1895,16 @@
 			(type default)
 		)
 		(uuid "30fe10cc-b015-475f-903a-9d7293b3706e")
+	)
+	(wire
+		(pts
+			(xy 39.37 140.97) (xy 49.53 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31accfd8-d8da-494f-bcfc-78e27702c2de")
 	)
 	(wire
 		(pts
@@ -2484,7 +2496,7 @@
 		)
 		(uuid "58bc01e8-3622-48fa-bfa8-eab176e1a926")
 	)
-	(label "5V_PERIPHERAL"
+	(label "5V0_PERIPHERAL"
 		(at 114.3 128.27 180)
 		(effects
 			(font
@@ -2544,6 +2556,16 @@
 		)
 		(uuid "7620c66e-e8c9-4a2a-a3e8-7ad6ab8ae88b")
 	)
+	(label "CC1"
+		(at 39.37 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "766fcf5d-5c3c-479c-b788-aafe8b47952d")
+	)
 	(label "USB2_P"
 		(at 86.36 63.5 180)
 		(effects
@@ -2563,6 +2585,16 @@
 			(justify left bottom)
 		)
 		(uuid "7d5a2b2f-0ea3-4086-b538-65807005ae2a")
+	)
+	(label "CC2"
+		(at 39.37 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "81300d04-4a91-4faa-95fd-0919c5953861")
 	)
 	(label "I2C_EXT_SCL1"
 		(at 148.59 139.7 0)
