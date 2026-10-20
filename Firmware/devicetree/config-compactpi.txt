@@ -1,0 +1,34 @@
+# --- compactPi carrier (append to /boot/firmware/config.txt) -----------------
+# Schematic reference: compactPi rev 0, 2026-10-19
+
+[cm5]
+# I2C1 on GPIO2/3 -> J6, J9 (1.8 k on-module pull-ups to GPIO_VREF = 3V3)
+dtparam=i2c_arm=on
+dtparam=i2c_arm_baudrate=100000
+
+# I2C3 on GPIO6 (SDA) / GPIO7 (SCL) -> TPS25751 I2Ct at 0x20  (/dev/i2c-3)
+# (schematic labels say SCL4/SDA4 — that was the CM4 numbering; on CM5/RP1 it is I2C3)
+dtoverlay=i2c3-pi5,pins_6_7,baudrate=100000
+
+# SPI1 bus for the MCP25625 (CE0 = GPIO18); no spidev on CE0
+dtoverlay=spi1-1cs,cs0_spidev=off
+
+# Board overlay: peripheral 5 V rail, MCP25625 (can0), Ethernet 100 Mb/s cap
+dtoverlay=compactpi
+# Set once Y1 is chosen (default in overlay is 16 MHz):
+#dtparam=can_oscillator=20000000
+
+# USB-C (J15): USB_OTG_ID is floating -> device/gadget role (rpiboot, USB gadget)
+dtoverlay=dwc2,dr_mode=peripheral
+
+# --- Not yet wired on the schematic (enable once J4/J10 reach the CM5) -------
+# J4  -> UART0  (GPIO14 TX / GPIO15 RX)
+#enable_uart=1
+#dtoverlay=uart0-pi5
+# J10 -> UART2  (GPIO4 TX / GPIO5 RX)   or uart4-pi5 for GPIO12/13
+#dtoverlay=uart2-pi5
+
+# --- No RTC backup cell fitted (VBAT unconnected) ---------------------------
+# Rely on NTP / GPS for time; nothing to configure.
+
+[all]

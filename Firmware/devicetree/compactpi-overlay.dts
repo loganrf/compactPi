@@ -1,0 +1,164 @@
+// SPDX-License-Identifier: CERN-OHL-S-2.0
+/*
+ * compactpi-overlay.dts — Device-tree overlay for the compactPi CM5 carrier
+ *
+ * Covers the on-board peripherals that need explicit DT description.
+ * Everything else (HDMI0, microSD on CM5 Lite, USB host on USB3-1 D±,
+ * Ethernet PHY, I2C1 pull-ups, PWR LED) is handled by the stock
+ * bcm2712-rpi-cm5*.dtb and needs no overlay.
+ *
+ * Schematic reference: compactPi rev 0, commit f49593c + working-tree edits (2026-10-19)
+ *
+ *   Peripheral                 CM5 signal            Status
+ *   -------------------------  --------------------  ---------------------------
+ *   5V0_PERIPHERAL rail (U14)  VBUS_EN (RP1 GPIO42)  described below (regulator)
+ *   MCP25625 CAN (U21)         SPI1 CE0, INT=GPIO25  described below
+ *   I2C1 ext. (J6, J9)         GPIO2/3               enabled via config.txt
+ *   Ethernet 10/100 (J5)       2-pair magnetics      PHY capped at 100 Mb/s below
+ *   USB-C (J15) device port    USB2 OTG, ID floating dwc2 peripheral via config.txt
+ *   UART J4 / J10              — not yet wired —     placeholders in config.txt
+ *   TPS25751 I2Ct (U3)         GPIO6/7 = RP1 I2C3,   bus via config.txt (i2c3-pi5);
+ *                              IRQ = GPIO26          IRQ pull-up below; no kernel driver
+ *                                                    bound (userspace, address 0x20)
+ *
+ * Build:   dtc -@ -I dts -O dtb -o compactpi.dtbo compactpi-overlay.dts
+ * Install: sudo cp compactpi.dtbo /boot/firmware/overlays/
+ *          then add  dtoverlay=compactpi  to /boot/firmware/config.txt
+ */
+
+/dts-v1/;
+/plugin/;
+
+/* Plain constants so the file builds with dtc alone (no cpp/dt-bindings):
+ *   GPIO_ACTIVE_HIGH = 0, IRQ_TYPE_LEVEL_LOW = 8 */
+
+/ {
+	compatible = "brcm,bcm2712";
+
+	/* ------------------------------------------------------------------
+	 * 1. Peripheral 5 V rail (U14 TLVM13630, EN <- CM5 VBUS_EN / RP1 GPIO42)
+	 *    Feeds MCP25625 VDDA, J4/J6-J10 VCC, J11 USB-host VBUS, HDMI 5 V,
+	 *    TPS25751 PP5V.  R18 pulls EN low until RP1 drives it.
+	 *
+	 *    VERIFY ON TARGET: the stock CM5 DTB may already own GPIO42 for
+	 *    USB VBUS control.  Check with `pinctrl get 42` / `gpioinfo` before
+	 *    relying on this node; if it is already driven high by firmware,
+	 *    delete fragment@0 and drop the xceiver-supply reference below.
+	 * ------------------------------------------------------------------ */
+	fragment@0 {
+		target-path = "/";
+		__overlay__ {
+			compactpi_periph_5v: compactpi-periph-5v {
+				compatible = "regulator-fixed";
+				regulator-name = "5V0_PERIPHERAL";
+				regulator-min-microvolt = <5000000>;
+				regulator-max-microvolt = <5000000>;
+				gpio = <&rp1_gpio 42 0>;
+				enable-active-high;
+				startup-delay-us = <5000>;   /* TLVM13630 soft-start + margin */
+				regulator-boot-on;
+				regulator-always-on;         /* JST VCC pins, USB host, HDMI 5V */
+			};
+		};
+	};
+
+	/* ------------------------------------------------------------------
+	 * 2. MCP25625 oscillator (Y1)
+	 *    Y1 HAS NO VALUE IN THE SCHEMATIC YET.  16 MHz assumed; change
+	 *    clock-frequency (or use dtparam=can_oscillator=...) to match.
+	 * ------------------------------------------------------------------ */
+	fragment@1 {
+		target-path = "/";
+		__overlay__ {
+			compactpi_can_osc: compactpi-can-osc {
+				compatible = "fixed-clock";
+				#clock-cells = <0>;
+				clock-frequency = <16000000>;
+			};
+		};
+	};
+
+	/* ------------------------------------------------------------------
+	 * 3. SPI1 (RP1): GPIO21 SCLK, GPIO20 MOSI -> U21 SI, GPIO19 MISO <- U21 SO,
+	 *    GPIO18 CE0 -> U21 ~CS.  CE1 (GPIO17) unused.
+	 *    The bus itself is enabled by `dtoverlay=spi1-1cs,cs0_spidev=off`
+	 *    in config.txt; this fragment only adds the CAN controller to it.
+	 * ------------------------------------------------------------------ */
+	fragment@2 {
+		target = <&spi1>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+
+			compactpi_can0: can@0 {
+				compatible = "microchip,mcp25625";
+				reg = <0>;                          /* CE0 */
+				spi-max-frequency = <10000000>;     /* MCP25625 max 10 MHz */
+				clocks = <&compactpi_can_osc>;
+				interrupt-parent = <&rp1_gpio>;
+				interrupts = <25 8>;   /* CAN_nINT, GPIO25 */
+				pinctrl-names = "default";
+				pinctrl-0 = <&compactpi_can_int_pins>;
+				/* VDD/VIO are CM5 +3V3 (always on with the module): no vdd-supply */
+				xceiver-supply = <&compactpi_periph_5v>;  /* VDDA, 5 V */
+				status = "okay";
+			};
+		};
+	};
+
+	/* ------------------------------------------------------------------
+	 * 4. GPIO25 as interrupt input with pull-up (MCP25625 ~INT)
+	 * ------------------------------------------------------------------ */
+	fragment@3 {
+		target = <&rp1_gpio>;
+		__overlay__ {
+			compactpi_can_int_pins: compactpi-can-int-pins {
+				pins = "gpio25";
+				function = "gpio";
+				bias-pull-up;
+			};
+		};
+	};
+
+	/* ------------------------------------------------------------------
+	 * 5. Ethernet: only pairs 0/1 are wired (TG110 10/100 magnetics),
+	 *    so stop the BCM54210PE advertising 1000BASE-T.
+	 *    VERIFY label: in current Raspberry Pi kernels the CM5 PHY node is
+	 *    `phy1` under `rp1_eth`; adjust if `dtc -I fs /proc/device-tree`
+	 *    shows otherwise.
+	 * ------------------------------------------------------------------ */
+	fragment@4 {
+		target = <&phy1>;
+		__overlay__ {
+			max-speed = <100>;
+		};
+	};
+
+	/* ------------------------------------------------------------------
+	 * 6. TPS25751 I2Ct interrupt (nI2Ct_IRQ, open-drain) -> GPIO26.
+	 *    Bus: RP1 I2C3 on GPIO6 (SDA) / GPIO7 (SCL), enabled by
+	 *    `dtoverlay=i2c3-pi5,pins_6_7` in config.txt -> /dev/i2c-3.
+	 *    Target address 0x20 (ADCIN1=7 / ADCIN2=5, index #1).
+	 *    No kernel driver is bound: mainline tps6598x knows "ti,tps25750"
+	 *    but not the TPS25751, and the board loads its config from EEPROM.
+	 *    Access it from userspace (i2c-tools) instead.
+	 * ------------------------------------------------------------------ */
+	fragment@5 {
+		target = <&rp1_gpio>;
+		__overlay__ {
+			compactpi_pd_irq_pins: compactpi-pd-irq-pins {
+				pins = "gpio26";
+				function = "gpio";
+				bias-pull-up;
+			};
+		};
+	};
+
+	__overrides__ {
+		can_oscillator = <&compactpi_can_osc>, "clock-frequency:0";
+		can_spi_hz     = <&compactpi_can0>, "spi-max-frequency:0";
+		can            = <&compactpi_can0>, "status";
+		eth_max_speed  = <&phy1>, "max-speed:0";
+	};
+};

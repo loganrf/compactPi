@@ -1768,16 +1768,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 111.76) (xy 214.63 127)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "0b18ae4b-e508-4f6f-a23a-00f2ca64dfe7")
-	)
-	(wire
-		(pts
 			(xy 59.69 270.51) (xy 38.1 270.51)
 		)
 		(stroke
@@ -1815,6 +1805,16 @@
 			(type default)
 		)
 		(uuid "1cac96b9-903e-4c74-a171-a97efb819c85")
+	)
+	(wire
+		(pts
+			(xy 146.05 97.79) (xy 163.83 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1efb0cd6-5b0d-43ea-a693-62723dccf954")
 	)
 	(wire
 		(pts
@@ -1978,16 +1978,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 111.76) (xy 184.15 127)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "44f248e5-7e3d-4277-981e-868f83cad8fe")
-	)
-	(wire
-		(pts
 			(xy 220.98 148.59) (xy 234.95 148.59)
 		)
 		(stroke
@@ -2138,6 +2128,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 147.32) (xy 49.53 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83d075a3-6ad1-4bf0-b631-0d2e6619c156")
+	)
+	(wire
+		(pts
 			(xy 52.07 45.72) (xy 77.47 45.72)
 		)
 		(stroke
@@ -2258,16 +2258,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 111.76) (xy 180.34 127)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "b994142f-02ac-4881-9587-6d3df53c96d2")
-	)
-	(wire
-		(pts
 			(xy 220.98 143.51) (xy 234.95 143.51)
 		)
 		(stroke
@@ -2328,6 +2318,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 152.4) (xy 49.53 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db43e3e9-4df1-46f6-8264-6dd684c2e552")
+	)
+	(wire
+		(pts
 			(xy 308.61 140.97) (xy 322.58 140.97)
 		)
 		(stroke
@@ -2358,6 +2358,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 149.86) (xy 49.53 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0b7c2c3-b019-4724-91bf-fa704efdd493")
+	)
+	(wire
+		(pts
 			(xy 308.61 130.81) (xy 322.58 130.81)
 		)
 		(stroke
@@ -2378,6 +2388,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 148.59) (xy 163.83 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7c564a8-c5c5-4ac0-9166-115edc5299f8")
+	)
+	(wire
+		(pts
 			(xy 308.61 146.05) (xy 322.58 146.05)
 		)
 		(stroke
@@ -2385,6 +2405,26 @@
 			(type default)
 		)
 		(uuid "fed1506b-d2c9-49c0-abd8-2060dc24be82")
+	)
+	(label "I2C_PMIC_SDA"
+		(at 34.29 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "01b84116-c384-48f6-b8ff-b1f60cf152f9")
+	)
+	(label "I2C_PMIC_nINT"
+		(at 34.29 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "03211d11-8bc6-4e8a-9da8-879b6675b176")
 	)
 	(label "USB2a_P"
 		(at 153.67 63.5 0)
@@ -2485,6 +2525,16 @@
 			(justify left bottom)
 		)
 		(uuid "3076bf30-2b3f-4e45-8b46-8214bea654a1")
+	)
+	(label "3V3"
+		(at 146.05 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "406ede48-dbe2-489c-acf4-04e3ecc7138d")
 	)
 	(label "USB2a_N"
 		(at 153.67 66.04 0)
@@ -2726,6 +2776,16 @@
 		)
 		(uuid "ab55920c-fac6-4b86-a8a8-19528e7eb6f7")
 	)
+	(label "I2C_PMIC_SCL"
+		(at 34.29 147.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b642039f-6fba-42a0-9635-86953c00bc59")
+	)
 	(label "CAN_nINT"
 		(at 234.95 151.13 180)
 		(effects
@@ -2746,7 +2806,7 @@
 		)
 		(uuid "c8b4eb21-6e66-4465-a3d1-4434070704e7")
 	)
-	(label "I2C_PWM_SCL"
+	(label "I2C_PMIC_SCL"
 		(at 148.59 146.05 0)
 		(effects
 			(font
@@ -2776,7 +2836,17 @@
 		)
 		(uuid "d1e6dad0-30c5-40ca-b38d-e3e55dc3885a")
 	)
-	(label "I2C_PWM_SDA"
+	(label "I2C_PMIC_nINT"
+		(at 148.59 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d6969d73-8c31-4e63-9a30-1499ff36211f")
+	)
+	(label "I2C_PMIC_SDA"
 		(at 148.59 143.51 0)
 		(effects
 			(font
@@ -2990,6 +3060,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "mounting_hardware/mounting_hole"
+			(at 38.1 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "958716e0-704e-489f-bfff-42a93fb0761d")
 		)
@@ -3069,6 +3150,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "mounting_hardware/mounting_hole"
+			(at 38.1 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b2c0431b-4381-46d3-9404-3a7b1cef3936")
 		)
@@ -3136,6 +3228,17 @@
 			)
 		)
 		(property "Description" "Low Capacitance TVS Diode Array, 2 Channels, SOT-23-6"
+			(at 93.98 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
 			(at 93.98 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3409,6 +3512,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "mounting_hardware/mounting_hole"
+			(at 59.69 264.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b44faa73-a511-430e-936b-216fa6190103")
 		)
@@ -3630,6 +3744,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 77.47 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "31bcfe0a-bb6a-4e1b-98c4-465ef952edcd")
 		)
@@ -3789,6 +3914,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "mounting_hardware/mounting_hole"
+			(at 59.69 276.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "01689b3a-b2f5-47a4-b7c7-b2906339bc32")
 		)
@@ -3839,26 +3975,6 @@
 				(justify left top)
 			)
 		)
-		(pin "ID_SC" output
-			(at 184.15 127 90)
-			(uuid "ac264c30-3e9a-4be2-b97a-9949b68bd497")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "ID_SD" output
-			(at 180.34 127 90)
-			(uuid "54365317-1355-4216-bb75-829375abc4ec")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "SCL0" output
 			(at 163.83 133.35 180)
 			(uuid "a690fc6c-55d9-47e6-b533-faa4b67e20f3")
@@ -3867,16 +3983,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "GPIO_VREF" output
-			(at 214.63 127 90)
-			(uuid "b1086f75-01ba-4188-8d36-75a9e2828ca9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "SPI_CIPO0" input
@@ -4059,6 +4165,16 @@
 				(justify right)
 			)
 		)
+		(pin "PMIC_nINT" input
+			(at 163.83 148.59 180)
+			(uuid "912e819a-eb1a-4d1e-b7d3-9cf4646cf37f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -4118,26 +4234,6 @@
 		(pin "USB2_P" bidirectional
 			(at 163.83 63.5 180)
 			(uuid "0eaa98f0-9565-4637-ace3-42a5231b07f7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ID_SC" input
-			(at 184.15 111.76 270)
-			(uuid "181abe7a-f941-42b6-bd46-aaa3131f90fb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ID_SD" input
-			(at 180.34 111.76 270)
-			(uuid "ce83728b-bebd-48c2-8734-b6a50d837931")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4235,16 +4331,6 @@
 				(justify left)
 			)
 		)
-		(pin "GPIO_VREF" input
-			(at 214.63 111.76 270)
-			(uuid "9bb20359-0f8b-45bc-9d38-6626ed3a939d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "PCIE_PWR_EN" output
 			(at 220.98 87.63 0)
 			(uuid "e445000d-94a3-4ed1-b023-6aae972d0a39")
@@ -4285,6 +4371,16 @@
 				(justify left)
 			)
 		)
+		(pin "3V3" input
+			(at 163.83 97.79 180)
+			(uuid "77144295-0fe2-46d9-bc47-b7ed09cfe007")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "compactPi"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
@@ -4295,7 +4391,7 @@
 	)
 	(sheet
 		(at 49.53 120.65)
-		(size 40.64 22.86)
+		(size 40.64 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4321,7 +4417,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 49.53 144.0946 0)
+			(at 49.53 160.6046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4441,19 +4537,39 @@
 				(justify right)
 			)
 		)
-		(pin "5V_PERIPHERAL" bidirectional
-			(at 90.17 139.7 0)
-			(uuid "3e2bea0d-f634-45d2-8ec2-4452f294b0a0")
+		(pin "3V3_IN" input
+			(at 49.53 128.27 180)
+			(uuid "c73a43cc-8a49-4843-9a58-682f1c7c6355")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(pin "3V3_IN" input
-			(at 49.53 128.27 180)
-			(uuid "c73a43cc-8a49-4843-9a58-682f1c7c6355")
+		(pin "I2C_PMIC_SCL" bidirectional
+			(at 49.53 147.32 180)
+			(uuid "fda1618b-ce6c-4574-b3d9-4ef6b0fa1494")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_PMIC_nINT" output
+			(at 49.53 152.4 180)
+			(uuid "20171e9e-2780-43bf-9792-8872ec401b90")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_PMIC_SDA" bidirectional
+			(at 49.53 149.86 180)
+			(uuid "835a7535-aeec-41b6-a8b7-9bdd936124da")
 			(effects
 				(font
 					(size 1.27 1.27)

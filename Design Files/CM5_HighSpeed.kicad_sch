@@ -5922,12 +5922,6 @@
 		(uuid "6f9d03d7-aea0-4f19-8e46-d8db829b4de6")
 	)
 	(junction
-		(at 280.67 179.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7b7a8d51-c055-4255-8bdb-1f4947e92e10")
-	)
-	(junction
 		(at 63.5 138.43)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -5962,12 +5956,6 @@
 		(diameter 1.016)
 		(color 0 0 0 0)
 		(uuid "a10b569c-d672-485d-9c05-2cb4795deeca")
-	)
-	(junction
-		(at 273.05 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a5f02bdf-d321-4ac0-be7a-bc23a529fbfb")
 	)
 	(junction
 		(at 129.54 107.95)
@@ -6939,16 +6927,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 179.07) (xy 280.67 179.07)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "87a0ffb1-5477-4b20-a3ac-fef5af129a33")
-	)
-	(wire
-		(pts
 			(xy 59.69 95.25) (xy 66.04 95.25)
 		)
 		(stroke
@@ -7329,16 +7307,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 181.61) (xy 273.05 181.61)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c62adb8b-b306-48da-b0ae-f6a287e54f62")
-	)
-	(wire
-		(pts
 			(xy 129.54 123.19) (xy 129.54 115.57)
 		)
 		(stroke
@@ -7677,6 +7645,16 @@
 		)
 		(uuid "0775259c-5493-480c-8aab-62f08f408f66")
 	)
+	(label "3V3"
+		(at 266.7 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b4df91c-1e9b-418e-8ba3-81438b17449a")
+	)
 	(label "HDMI0_D1_N"
 		(at 238.76 92.71 0)
 		(effects
@@ -7727,16 +7705,6 @@
 		)
 		(uuid "28b741e0-9f5e-481b-9366-14b376f4d1e8")
 	)
-	(label "ID_SC"
-		(at 257.175 179.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2f4c659c-2ccb-4fb1-808e-7868af588a89")
-	)
 	(label "HDMI0_D2_P"
 		(at 49.53 171.45 0)
 		(effects
@@ -7746,16 +7714,6 @@
 			(justify left bottom)
 		)
 		(uuid "3388a811-b444-4ecc-a564-b22a1b731ab4")
-	)
-	(label "ID_SD"
-		(at 257.175 181.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "37f8ba3f-cca4-4b16-b699-07a704844fc9")
 	)
 	(label "USB3-0-TX_N"
 		(at 49.53 133.35 0)
@@ -8007,7 +7965,7 @@
 		)
 		(uuid "d5b0938b-9efb-4b58-8ac4-d92da9ed2e30")
 	)
-	(label "SCL1"
+	(label "HDMI0_SCL"
 		(at 288.925 179.07 180)
 		(effects
 			(font
@@ -8017,7 +7975,7 @@
 		)
 		(uuid "e1c71a89-4e45-4a56-a6ef-342af5f92d5c")
 	)
-	(label "SDA1"
+	(label "HDMI0_SDA"
 		(at 288.925 181.61 180)
 		(effects
 			(font
@@ -8057,16 +8015,6 @@
 		)
 		(uuid "e9ec93ce-865b-4915-b57a-bb1d0189eb7b")
 	)
-	(label "GPIO_VREF"
-		(at 263.525 163.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ebadfd51-5a1d-4821-b341-8a1acb4abb01")
-	)
 	(label "HDMI0_SDA"
 		(at 130.81 209.55 0)
 		(effects
@@ -8076,6 +8024,16 @@
 			(justify left bottom)
 		)
 		(uuid "ed1f5df2-cfb6-4083-a9e5-5d196546ef9b")
+	)
+	(label "unconnected-(J11-MountPin-PadMP)_1"
+		(at 218.44 163.83 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f5067f21-1515-48d7-ac8b-adf379843ac7")
 	)
 	(label "HDMI0_CEC"
 		(at 238.76 107.95 0)
@@ -8184,17 +8142,6 @@
 		)
 		(uuid "59142adb-6887-41fc-851e-9a7f51511d60")
 	)
-	(hierarchical_label "ID_SC"
-		(shape input)
-		(at 251.46 179.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5b04e20f-8575-4362-b040-2e2133d670c8")
-	)
 	(hierarchical_label "PCIE_RX_P"
 		(shape input)
 		(at 59.69 102.87 180)
@@ -8206,7 +8153,7 @@
 		)
 		(uuid "5fc4054a-b929-433e-a947-747fb7ed003d")
 	)
-	(hierarchical_label "GPIO_VREF"
+	(hierarchical_label "3V3"
 		(shape input)
 		(at 262.89 163.83 180)
 		(effects
@@ -8249,17 +8196,6 @@
 			(justify right)
 		)
 		(uuid "811f5389-c208-4640-ab1a-b454491bb330")
-	)
-	(hierarchical_label "ID_SD"
-		(shape input)
-		(at 251.46 181.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8e715b73-353f-4cfc-aa33-1eac54b89b6c")
 	)
 	(hierarchical_label "5V0_PERIPHERAL"
 		(shape input)
@@ -8602,6 +8538,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 273.05 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "eca8c1f1-6751-4304-8a65-b05952048507")
 		)
@@ -8739,6 +8686,17 @@
 			)
 		)
 		(property "Field8" ""
+			(at 280.67 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 280.67 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -8896,6 +8854,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 295.91 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fb4e7351-d265-4999-adf6-bc7596c21cf3")
 		)
@@ -9033,6 +9002,17 @@
 			)
 		)
 		(property "Field8" "110091611"
+			(at 262.89 210.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
 			(at 262.89 210.82 0)
 			(hide yes)
 			(show_name no)
@@ -10308,6 +10288,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 152.4 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3c66cfb0-8d19-4d47-9b79-6096501669f4")
 		)
@@ -10525,6 +10516,17 @@
 				)
 			)
 		)
+		(property "KiLib_Generator" "connector/SMD_single_row_plus_mounting_pad"
+			(at 218.44 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "MP"
 			(uuid "a9bbd0d1-5867-42a3-a99c-c7316ce5eb2d")
 		)
@@ -10604,6 +10606,17 @@
 			)
 		)
 		(property "Description" "Low Capacitance TVS Diode Array, 2 Channels, SOT-23-6"
+			(at 181.61 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
 			(at 181.61 154.94 0)
 			(hide yes)
 			(show_name no)
